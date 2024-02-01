@@ -1,4 +1,5 @@
 @import '/src/styles/variables.scss';
+@import '/src/styles/breakpoints.scss';
 
 .menu {
   padding: 20px 250px;
@@ -18,5 +19,27 @@
     font-size: 5rem;
     min-width: 400px;
     width: 40%;
+  }
+}
+
+.menu {
+  padding: 50px $horizontal-padding;
+
+  @media (max-width: $desktop-xsm) {
+    padding: 50px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $desktop-xsm) and (max-width: $desktop-sm) {
+    padding: 50px $horizontal-padding-sm;
+  }
+
+  @media (min-width: $desktop-sm) and (max-width: $desktop-md) {
+    padding: 50px $horizontal-padding-md;
+  }
+
+  &__title {
+    color: $dark;
+    font-size: 3rem;
+    margin-bottom: 30px;
   }
 }
