@@ -7,6 +7,11 @@ export default function Menu() {
       <nav className={styles.menu}>
         <img src={logo} alt="logo" />
       </nav>
+      <header className={styles.header}>
+        <div className={styles.header__text}>
+          A casa da Nonna
+        </div>
+      </header>
     </main>
   )
 }
